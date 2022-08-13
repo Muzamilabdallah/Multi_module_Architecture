@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.multi_module_architecture">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Multi_module_Architecture"
+        tools:replace="roundIcon, android:label, android:theme">
+        <activity
+            android:name="com.example.multimodulearchitecture.main"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Multi_module_Architecture" />
+        <activity
+            android:name="com.example.multimodulearchitecture.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Multi_module_Architecture">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.core.HomeActivity"
+            android:theme="@style/Theme.Multi_module_Architecture" />
+        <activity
+            android:name="com.example.feature_a.SettingActivity"
+            android:theme="@style/Theme.Multi_module_Architecture"></activity>
+        <activity
+            android:name="com.example.feature_b.ProfileActivity"
+            android:theme="@style/Theme.Multi_module_Architecture"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">multi_module</string>
+    <string name="title_activity_main">main</string>
+</resources>

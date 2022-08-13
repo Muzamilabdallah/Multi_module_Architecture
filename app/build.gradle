@@ -1,0 +1,25 @@
+plugins {
+    id "com.android.application"
+    id 'base_plugin'
+    id 'compose_plugin'
+    id 'core_plugin'
+
+}
+
+android {
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    //clean android block //specified at plugins.CustomPlugin
+}
+
+
+dependencies {
+    implementation(project(path:":core"))
+    implementation(project(path:":feature_a"))
+    implementation(project(path:":feature_b"))
+    implementation(project(path:":presntation"))
+
+}
